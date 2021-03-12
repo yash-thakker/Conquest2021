@@ -1,0 +1,43 @@
+.customeNavbar {
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    top: -100px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    display: flex;
+    justify-content: center;
+    line-height: 35px;
+    font-family: "Avenir-Regular",
+        sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.customeNavbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.customeNavbar a:hover {
+    /* background-color: #111; */
+    color: #fc4f02;
+}
+
+@media only screen and (max-width: 600px) {
+    .customeNavbar {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #hamburgerMenuID {
+        display: none !important;
+    }
+}

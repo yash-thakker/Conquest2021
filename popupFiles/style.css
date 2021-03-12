@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "bebasnueRegular";
+    src: url("./Font/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+    font-family: "bebasnueLight";
+    src: url("./Font/BebasNeue-Light.ttf");
+}
+
+@font-face {
+    font-family: "bebasnueBook";
+    src: url("./Font/BebasNeue-Book.ttf");
+}
+
+@font-face {
+    font-family: "Matthan";
+    src: url("./Font/Matthan\ Sans\ Regular.ttf");
+}
+
+@font-face {
+    font-family: "Abel";
+    src: url("./Font/abel-regular.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100&display=swap");
+
+.registrationPopupOverlay {
+    background-color: black;
+    position: fixed;
+    opacity: 0.4;
+    left: 0;
+    right: 0;
+    width: 100vw;
+}
+
+.registrationPopupWrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: black; */
+    /* opacity: 0.4; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 1000000;
+}
+
+.registrationPopupWrapper .registrationPopup {
+    opacity: 1;
+    width: 40vw;
+    height: 95vh;
+    position: fixed;
+    background-color: #141313;
+    border-radius: 0.8%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.registrationPopupWrapper .registrationPopup .progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+}
+
+.registrationPopupWrapper .registrationPopup .progress-bar {
+    transition: width .6s ease;
+}
+
+.registrationPopupWrapper .registrationPopup .registrationProgress {
+    border-radius: 0;
+    background-color: unset;
+}
+
+.registrationPopupWrapper .registrationPopup .registrationProgress .registrationProgressBar {
+    background-color: #f84517;
+    height: 25%;
+}
+
+.registrationPopupWrapper .registrationPopup .mainHeading {
+    color: white;
+    margin-left: 5%;
+    margin-top: 4%;
+    font-family: "bebasnueRegular";
+    font-size: 4.6rem;
+}
+
+.registrationPopupWrapper .registrationPopup .infoHeading {
+    color: white;
+    margin-left: 5%;
+    margin-bottom: 0;
+    font-size: 2.13rem;
+    font-family: "Abel";
+    font-weight: 100;
+}
+
+.registrationPopupWrapper .registrationPopup input {
+    margin-right: 5%;
+    background-color: #141313;
+    border: none;
+    color: white;
+    font-family: "Abel";
+    caret-color: white;
+    font-size: 2rem;
+    width: 100%;
+    border-left: 1px solid !important;
+    border-color: #f84517 !important;
+    margin-bottom: 5%;
+    padding-left: 2%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    padding-right: 0%;
+    height: auto;
+}
+
+.registrationPopupWrapper .registrationPopup input:focus {
+    outline: none;
+}
+
+.registrationPopupWrapper .registrationPopup .rightArrow {
+    color: #f84517;
+    font-size: 1.3rem;
+}
+
+.registrationPopupWrapper .registrationPopup .inputWrapper {
+    width: 60%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.registrationPopupWrapper .registrationPopup .inputUnderline {
+    background-color: #f84517;
+    width: 60%;
+    margin-top: 0.2%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    height: 0.1px;
+}
+
+.registrationPopupWrapper .registrationPopup .invalidEntry {
+    width: 60%;
+    text-align: left;
+    margin-left: 5%;
+    color: white;
+    font-size: 1.7rem;
+    font-style: italic;
+    font-family: "Abel";
+}
+
+.registrationPopupWrapper .registrationPopup .thankYouText {
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    font-family: "Abel";
+}
+
+.registrationPopupWrapper .registrationPopup .thankYouLabel {
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Abel";
+    line-height: unset;
+}
+
+.registrationPopupWrapper .registrationPopup .backgroundImage {
+    /* width: 100%; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* height: 100%; */
+    width: 100%;
+    z-index: -1;
+}
+
+.registrationPopupWrapper .registrationPopup .nextButton {
+    /* width: 20%; */
+    width: fit-content;
+    background-color: #f84517;
+    color: white;
+    font-family: "Abel";
+    font-size: 2rem;
+    /* position: absolute;
+  bottom: 2%;
+  right: 2%; */
+    border: 1px solid;
+    border-color: #f84517;
+    outline: none;
+    transition: linear 0.1s;
+    margin-left: 5%;
+    margin-top: 1%;
+    line-height: 3rem;
+    height: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.registrationPopupWrapper .registrationPopup .nextButton:hover {
+    background-color: #141313;
+    color: white;
+}
+
+.registrationPopupWrapper .registrationPopup .closeButton {
+    color: white;
+    position: absolute;
+    right: 3%;
+    top: 2%;
+    width: 1.8%;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .registrationPopupWrapper .registrationPopup {
+        width: 100vw;
+        min-height: -webkit-fill-available;
+        position: fixed;
+        top: 0;
+        border-radius: 0;
+    }
+
+    .registrationPopupWrapper .registrationPopup .closeButton {
+        width: 3%;
+        margin-right: 3%;
+    }
+
+    .registrationPopupWrapper .registrationPopup .nextButton {
+        margin-bottom: 3%;
+        margin-right: 2%;
+        padding-top: 1%;
+    }
+
+    .registrationPopupWrapper .registrationPopup .registrationProgress .registrationProgressBar {
+        height: 40%;
+    }
+
+    .registrationPopupWrapper .registrationPopup .backgroundImage {
+        position: unset;
+    }
+    
+    .registrationPopupWrapper .registrationPopup .inputWrapper input {
+        border-radius:0px;
+    }
+}
+
+
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+
+    /* CSS specific to iOS devices */
+    .registrationPopupWrapper .registrationPopup .backgroundImage {
+        display: none;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+      .registrationPopupWrapper .registrationPopup .backgroundImage {
+        display: none;
+    }
+}

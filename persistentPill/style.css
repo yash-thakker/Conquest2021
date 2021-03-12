@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass:700&display=swap");
+
+.persistentPill {
+  position: fixed;
+  bottom: 5%;
+  left: 3%;
+  background-color: #111;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.7%;
+  padding-bottom: 0.7%;
+  border-radius: 6px;
+  border: 2px solid;
+  border-color: #fc4f02;
+  z-index: 1000;
+  transition: font-size 0.2s;
+  font-size: 2.8rem;
+  transition: bottom 0.7s, font-size 0.3s;
+}
+
+.persistentPill h1 {
+  margin: 0;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: inherit;
+  text-align: center;
+}
+
+.persistentPill:hover {
+  font-size: 3rem;
+  background-color: #fc4f02;
+}
+
+@media only screen and (max-width: 600px) {
+  .customeNavbar {
+    display: none;
+  }
+
+  .persistentPill {
+    padding: 1% 0;
+    width: 100vw;
+    bottom: 0%;
+    left: 0%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-radius: 0;
+  }
+}
