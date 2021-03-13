@@ -1868,8 +1868,6 @@ input::-moz-focus-inner {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.2;
-  background: linear-gradient(to right, black 0%, black 20%);
 }
 
 .s-home::before {
