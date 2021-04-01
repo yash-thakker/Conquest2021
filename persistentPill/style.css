@@ -9,12 +9,12 @@
   padding-right: 1%;
   padding-top: 0.7%;
   padding-bottom: 0.7%;
-  border-radius: 35px;
+  border-radius: 6px;
   border: 2px solid;
   border-color: #fc4f02;
   z-index: 1000;
   transition: font-size 0.2s;
-  font-size: 3rem;
+  font-size: 2.8rem;
   transition: bottom 0.7s, font-size 0.3s;
 }
 
