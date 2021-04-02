@@ -586,9 +586,11 @@
 
             <div class="thankYouText" id="thankYouTextID" style="display: none;">
                 <label class="thankYouLabel">
-                    Welcome to the <span style="color:#f06947">Conquest Community!</span>
+                    Thank you for completing your <span style="color:#f06947">Pre-Registration!</span>
                 </label>
-Thanks a lot for pre-registering. We have closed our registrations for next year, do keep in touch, we'll approach next year. All the best in your journey forward!
+                   To evaluate your startup in a comprehensive manner,
+                   we would need you to finish your registration process by
+                   filling up our application on F6S.
             </div>
             <div class="invalidEntry" id="invalidEntryID">Please fill all the entries</div>
             <button class="nextButton" onclick="next()" id="nextButtonID">Next</button>
@@ -664,7 +666,7 @@ Thanks a lot for pre-registering. We have closed our registrations for next year
                 labelTwo.style.display = "none";
                 labelThree.style.display = "none";
                 document.getElementById("thankYouTextID").style.display = "block";
-                document.getElementById("nextButtonID").innerHTML = "Close";
+                document.getElementById("nextButtonID").innerHTML = "<a href='https://www.f6s.com/conquest21-bits-pilani/apply' target='_blank' >Complete your Application</a>";
                 document.getElementById("nextButtonID").style.marginTop = '4%';
                 invalidEntry.style.display = "none";
                 closePopup = true;
